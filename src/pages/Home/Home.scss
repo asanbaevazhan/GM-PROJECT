@@ -1,0 +1,88 @@
+.home{
+    height: 250vh;
+    background: #18625A;
+    
+
+    .home2{
+        position: relative;
+        left: 150px;
+        top: 0px;
+        width: 1200px;
+        height: 570.99px;
+        background-image: url('./../../assets/img/изображения.png');
+        background-repeat: no-repeat;
+        
+    }
+
+    .home2 > h1{
+        position: relative;
+        width: 500px;
+        height: 78px;
+        left: 352px;
+        top: 143px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 66px;
+        letter-spacing: 0.7em;
+        text-transform: uppercase;
+
+        color: #D9D9D9;
+    }
+
+    .home2 > p{
+        position: relative;
+        width: 613px;
+        height: 17px;
+        left: 313px;
+        top: 124px;
+
+        font-family: 'Brygada 1918';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 17px;
+
+        letter-spacing: 0.015em;
+
+        color: #D9D9D9;
+    }
+
+    .btn{
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+
+        position: absolute;
+        width: 220px;
+        height: 36px;
+        left: 655px;
+        top: 300px;
+
+        border: 1px solid #D9D9D9;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+
+        height: 16px;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: #FFFFFF;
+    }
+    
+}
