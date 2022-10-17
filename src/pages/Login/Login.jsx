@@ -35,7 +35,7 @@ function Login() {
                 <img className='line' src={Line} alt="" />
               </div>
               <div>
-                <Link to='/registration' className='registration-help'>Зарегистрироваться с помощью</Link>
+                <Link to='/registration' className='registration-help'>Зарегистрироваться</Link>
               </div>
             </div>
             <div className='link-app'>
@@ -47,11 +47,11 @@ function Login() {
           </div>
         </div>
       </div>
-      <div className='login-footer'>
+      {/* <div className='login-footer'>
         <p className='logo-title left'>2022</p>
         <span className='logo-title'>|</span>
         <p className='logo-title'>gift me</p>
-      </div>
+      </div> */}
     </div>
   )
 }
