@@ -38,20 +38,20 @@ function Login() {
                 <Link to='/registration' className='registration-help'>Зарегистрироваться</Link>
               </div>
             </div>
-            <div className='link-app'>
+            {/* <div className='link-app'>
               <div><img src={Vk} alt="" /></div>
               <div><img src={Google} alt="" /></div>
               <div><img src={Facebook} alt="" /></div>
               <div><img src={Apple} alt="" /></div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      {/* <div className='login-footer'>
+      <div className='login-footer'>
         <p className='logo-title left'>2022</p>
         <span className='logo-title'>|</span>
         <p className='logo-title'>gift me</p>
-      </div> */}
+      </div>
     </div>
   )
 }
