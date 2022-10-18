@@ -32,12 +32,9 @@ function Registration() {
                 <button className='btn-registration'>Зарегистрироваться</button>
             </div>
             <div className='about-registration'>
-              <div><p className='account-registration'>Уже есть аккаунт?</p></div>
-              <div className='or-registration'>
-                <img className='line-registration' src={line} alt="" />
-              </div>
+              
               <div className='login-sign'>
-                <Link to='/login' className='login-help'>Зарегистрироваться с помощью</Link>
+                <Link to='/login' className='login-help'>Войти с помощью</Link>
               </div>
             </div>
             <div className='link-app-registration'>
@@ -49,11 +46,7 @@ function Registration() {
           </div>
         </div>
       </div>
-      <div className='registration-footer'>
-        <p className='logo-title-registration left-registration'>2022</p>
-        <span className='logo-title-registration'>|</span>
-        <p className='logo-title-registration'>gift me</p>
-      </div>
+      
     </div>
   )
 }

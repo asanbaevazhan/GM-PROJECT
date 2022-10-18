@@ -1,6 +1,6 @@
 import React from 'react'
 import './Header.scss'
-import login from './../../assets/icons/login.svg'
+import login from '../../assets/icons/login.svg'
 
 import { useNavigate } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
@@ -12,10 +12,9 @@ function Header() {
     navigate('/');
   }
   return (
-    <div className='header'>
-       
+    <div className='header-two'>
        <div className='logo' onClick={handleLogo}>
-        <p>GIFTME</p>
+        <p>GiftMe</p>
        </div>
 
        <div className="nav-bar">
@@ -49,22 +48,21 @@ function Header() {
             className='nav-link nav-link-ltr'
             onClick={handleLogo}
             activeClass="active"
-            to="novelties"
+            to="news"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
           >
-            Новинки
+            Новости
           </Link>
        </div>
 
-       <div className="login">
-          <a href="/login" className='login'>
-            <img src={login} alt="" />
-          </a>
-       </div>
-
+        <div className='login'>
+            <a href="/login" >
+                <img src={login} alt="" />
+            </a>
+        </div>
 
     </div>
   )

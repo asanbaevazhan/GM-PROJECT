@@ -1,26 +1,29 @@
 import React from 'react'
 import './Home.scss'
-import arrow from './../../assets/icons/Arrow 1.svg'
-import AboutUs from '../AboutUs/AboutUs.jsx'
-import Novelties from '../Novelties/Novelties.jsx'
-import Footer from '../Footer/Footer.jsx'
+
+import gift1 from '../../assets/gift/Ellipse 1.png'
+import gift2 from '../../assets/gift/Ellipse 2.png'
+import gift3 from '../../assets/gift/Ellipse 3.png'
 
 function Home() {
   return (
     <div className='home' id='home'>
       <div className="home2">
-        <h1>GIFTME</h1>
-        <p>Что-то особенное для кого-то особенного</p>
-
-        <div className='btn'>
-          <button>Сделать подарок</button>
-          <img src={arrow} alt="" />
+        <div className='headline'>
+          <p>Создайте свой cписок желаний прямо сейчас</p>
+          <h1>GiftMe</h1>
+          <a href="/login">Узнать больше</a>
         </div>
+
+        
+
+        
       </div>
-
-      <AboutUs/>
-
-      <Footer/>
+        <div className='img'>
+          <img src={gift1} alt="" className='img-1'/>
+          <img src={gift2} alt="" className='img-2'/>
+          <img src={gift3} alt="" className='img-3'/>
+        </div>
         
     </div>
   )
