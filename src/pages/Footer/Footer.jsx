@@ -20,7 +20,7 @@ function Footer() {
         </div>
 
         <div className="email">
-          <input type="email" name="" id="" placeholder='Email'/>
+          <input type="email" name="" id="" placeholder='Email' required/>
           <button type="submit">Подписаться</button>
         </div>
         

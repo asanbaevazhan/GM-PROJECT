@@ -14,16 +14,13 @@ function Home() {
           <h1>GiftMe</h1>
           <a href="/login">Узнать больше</a>
         </div>
-
-        
-
-        
       </div>
-        <div className='img'>
-          <img src={gift1} alt="" className='img-1'/>
-          <img src={gift2} alt="" className='img-2'/>
-          <img src={gift3} alt="" className='img-3'/>
-        </div>
+
+      <div className='img'>
+        <img src={gift1} alt="" className='img-1'/>
+        <img src={gift2} alt="" className='img-2'/>
+        <img src={gift3} alt="" className='img-3'/>
+      </div>
         
     </div>
   )
