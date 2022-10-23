@@ -4,6 +4,7 @@ import ctaImg from '../../assets/img/cta-img.jpg'
 import ctaGiftOne from '../../assets/icons/icons8-create-48.png'
 import ctaGiftTwo from '../../assets/icons/icons8-share-30.png'
 import ctaGiftThree from '../../assets/icons/icons8-gift-24.png'
+import SideBar from '../SideBar/SideBar'
 
 function CTA() {
   return (

@@ -59,7 +59,7 @@ function Header() {
        </div>
 
         <div className='login'>
-            <a href="/login" >
+            <a href="/registration" >
                 <img src={login} alt="" />
             </a>
         </div>

@@ -9,7 +9,8 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #18625A;
+
 
     .logo > p{
         margin: 0px;
@@ -40,6 +41,10 @@
         line-height: 24px;
         letter-spacing: 0.015em;
         cursor: pointer;
+    }
+
+    .nav-link{
+        color: #18625A;
     }
 
     

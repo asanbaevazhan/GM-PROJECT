@@ -1,9 +1,9 @@
 import React from 'react'
 import './Home.scss'
 
-import gift1 from '../../assets/gift/Ellipse 1.png'
-import gift2 from '../../assets/gift/Ellipse 2.png'
-import gift3 from '../../assets/gift/Ellipse 3.png'
+import gift1 from '../../../assets/gift/Ellipse 1.png'
+import gift2 from '../../../assets/gift/Ellipse 2.png'
+import gift3 from '../../../assets/gift/Ellipse 3.png'
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
         <div className='headline'>
           <p>Создайте свой cписок желаний прямо сейчас</p>
           <h1>GiftMe</h1>
-          <a href="/login">Узнать больше</a>
+          <a href="/registration">Узнать больше</a>
         </div>
       </div>
 

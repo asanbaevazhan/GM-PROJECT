@@ -1,12 +1,12 @@
 import React from 'react'
 import './News.scss'
 
-import img1 from './../../assets/img/sneakers.jpg'
-import img2 from './../../assets/img/bag.jpg'
-import img3 from './../../assets/img/knit.jpg'
-import img4 from './../../assets/img/iphone.png'
+import img1 from './../../../assets/img/sneakers.jpg'
+import img2 from './../../../assets/img/bag.jpg'
+import img3 from './../../../assets/img/knit.jpg'
+import img4 from './../../../assets/img/iphone.png'
 
-import line from '../../assets/icons/Arrow 1.svg'
+import line from '../../../assets/icons/Arrow 1.svg'
 
 function News() {
   return (

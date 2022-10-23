@@ -2,18 +2,40 @@
     background-color: #ffffff;
     border-right: 1px solid #18625A;
 }
-
 .ant-layout-sider-trigger{
-    background-color: #18625A;
+    background: #18625A;
+}
+.ant-layout-sider-trigger {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 48px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    background: #18625A;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 .ant-menu-title-content{
     color: #18625A;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
 }
 
 .ant-menu-inline .ant-menu-item::after{
     color: #18625A;
+
 }
 
+.ant-menu-item:hover{
+    border-top: 1px solid #18625A;
+    border-bottom: 1px solid #18625A;
+    
+}
 
 
 .ant-menu-item::after{
@@ -35,4 +57,19 @@
 
 .ant-menu-inline-collapsed-noicon{
     color: #18625A;
+}
+
+.side-bar{
+    h1{
+        margin: 10px;
+        padding: 20px;
+        font-family: 'Magtis';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 24px;
+        cursor: pointer;
+        color: #18625A;
+        text-align: center;
+    }
 }

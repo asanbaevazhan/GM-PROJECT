@@ -1,5 +1,5 @@
 .home{
-    height: 90vh;
+    height: 80vh;
     background: #18625A;
     
 
@@ -11,7 +11,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-image: url('./../../assets/img/new-bg.svg');
+        background-image: url('./../../../assets/img/new-bg.svg');
         background-repeat: no-repeat;
         background-size: cover;
         mix-blend-mode: hard-light;
@@ -38,11 +38,12 @@
                 color: rgb(255, 255, 255);
                 font-family: 'Magtis';
                 font-size: 170px;
+                padding-top: 50px;
             }
 
             a{
                 position: relative;
-                top: -100px;
+                top: -120px;
                 left: 10px;
                 border: 2px solid #fff;
                 border-radius: 10px;
@@ -69,7 +70,7 @@
 
     .img{
             position: absolute;
-            top: -30px;
+            top: -50px;
             left: 100px;
 
         .img-1{

@@ -1,9 +1,9 @@
 import React from 'react'
 import './AboutUs.scss'
 
-import img1 from './../../assets/img/about-us-1.svg'
-import img2 from './../../assets/img/about-us-2.svg'
-import img3 from './../../assets/img/about-us-3.svg'
+import img1 from './../../../assets/img/about-us-1.svg'
+import img2 from './../../../assets/img/about-us-2.svg'
+import img3 from './../../../assets/img/about-us-3.svg'
 
 function AboutDraft() {
   return (
