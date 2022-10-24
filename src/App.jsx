@@ -7,7 +7,6 @@ import { ProtectedRoute } from './ProtectedRoute.js';
 import NewLogin from './pages/NewLogin/NewLogin.jsx'
 import NewRegistration from './pages/NewRegistration/NewRegistration.jsx'
 import Dashboard from './pages/Dashboard/Dashboard.jsx';
-
 export const App = () => {
 const [user, setUser] = React.useState(null);
 
@@ -29,7 +28,7 @@ return (
         <button onClick={handleLogin}>Войти</button>
       )} */}
 
-      <Routes>
+      {/* <Routes>
         <Route index element={<Landing />} />
         <Route path="landing" element={<Landing />} />
 
@@ -55,9 +54,10 @@ return (
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
 
       
-      </Routes>
+      </Routes> */}
 
-      {/* <Dashboard/> */}
+      <Dashboard/>
+    
     </div>
   );
 };

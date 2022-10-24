@@ -1,15 +1,26 @@
 import {useState} from 'react';
 import {Routes, Route} from 'react-router-dom';
-import {Layout} from 'antd';
+import {Layout, Menu} from 'antd';
+import MUHeader from './MUHeader/MUHeader.jsx'
 import React from 'react';
+import './Dashboard.scss'
 
 import 'antd/dist/antd.css';
-import SideBar from '../../components/SideBar/SideBar.jsx';
-import AboutUs from '../Landing/AboutUs/AboutUs.jsx';
-import CTA from '../../components/CTA/CTA.jsx';
-import Main from './Main/Main.jsx';
+import NewSideBar from '../../components/NewSideBar/NewSideBar';
 
-const { Sider } = Layout;
+import Main from './Main/Main.jsx';
+import MyProfile from './MyProfile/MyProfile';
+import MyFriends from './MyFriends/MyFriends.jsx'
+import MyGifts from './MyGifts/MyGifts.jsx'
+import MyHolidays from './MyHolidays/MyHolidays';
+import Wishlist from './Wishlist/Wishlist.jsx';
+import Cart from './Cart/Cart'
+import Settings from './Settings/Settings';
+import Help from './Help/Help';
+import AboutUsPage from './AboutUsPage/AboutUsPage';
+
+const { Sider, Header} = Layout;
+
 
 function Dashboard() {
   const [collapsed, setCollapsed] = useState(false);
@@ -18,6 +29,7 @@ function Dashboard() {
       style={{
         minHeight: '100vh',
       }}
+      
     >
       
       <Sider 
@@ -25,20 +37,23 @@ function Dashboard() {
         collapsed={collapsed} 
         onCollapse={(value) => setCollapsed(value)}
       >
-        <SideBar/>
+        <NewSideBar/>
       </Sider>
+
+      {/* <DashHeader/> */}
+      {/* <MUHeader/> */}
       
       <Routes>
           <Route path="/main" element={<Main/>} />
-          <Route path="/my-profile" element={<AboutUs/>} />
-          <Route path="/my-friends" element={<Dashboard/>} />
-          <Route path="/my-gifts" element={<AboutUs/>} />
-          <Route path="/my-holidays" element={<Dashboard/>} />
-          <Route path="/wishlist" element={<AboutUs/>} />
-          <Route path="/cart" element={<Dashboard/>} />
-          <Route path="/settings" element={<AboutUs/>} />
-          <Route path="/help" element={<AboutUs/>} />
-          <Route path="/about-us" element={<AboutUs/>} />
+          <Route path="/my-profile" element={<MyProfile/>} />
+          <Route path="/my-friends" element={<MyFriends/>} />
+          <Route path="/my-gifts" element={<MyGifts/>} />
+          <Route path="/my-holidays" element={<MyHolidays/>} />
+          <Route path="/wishlist" element={<Wishlist/>} />
+          <Route path="/cart" element={<Cart/>} />
+          <Route path="/settings" element={<Settings/>} />
+          <Route path="/help" element={<Help/>} />
+          <Route path="/about-us" element={<AboutUsPage/>} />
       </Routes>
     </Layout> 
 

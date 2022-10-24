@@ -1,7 +1,7 @@
 import React from 'react'
 import {useNavigate} from 'react-router-dom'
 import { Menu } from 'antd';
-import './SideBar.scss'
+import './NewSideBar.scss'
 import Icon from '@ant-design/icons';
 
 function SideBar(props) {
@@ -128,6 +128,7 @@ return (
             items={items}
             onClick={handleMenuClick}
             className='menu'
+           
         />
     </div>
     
