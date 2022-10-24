@@ -1,0 +1,21 @@
+.top-bar{
+    height: 5vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #18625A;
+    padding-top: 10px;
+
+    p {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.015em;
+
+        color: #FFFFFF;
+    }
+}

@@ -1,0 +1,87 @@
+.ant-layout-sider-children{
+    background-color: #fff;
+    border: #18625A 1px solid;
+}
+
+.ant-menu-item::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid #18625A;
+    transform: scaleY(0.0001);
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    content: '';
+}
+.ant-layout-sider-trigger{
+    background: #18625A;
+}
+.ant-layout-sider-trigger {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    height: 48px;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    background: #18625A;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.ant-menu-title-content{
+    color: #18625A;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.ant-menu-inline .ant-menu-item::after{
+    color: #18625A;
+
+}
+
+.ant-menu-item:hover{
+    border-top: 1px solid #18625A;
+    border-bottom: 1px solid #18625A;
+    
+}
+
+
+.ant-menu-item::after{
+   
+}
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-right: 3px solid #18625A;
+    transform: scaleY(0.0001);
+    opacity: 0;
+    transition: transform 0.15s cubic-bezier(0.215, 0.61, 0.355, 1), opacity 0.15s cubic-bezier(0.215, 0.61, 0.355, 1);
+    content: '';
+}
+
+.ant-menu-inline-collapsed-noicon{
+    color: #18625A;
+}
+
+.side-bar{
+    h1{
+        margin: 10px;
+        padding: 20px;
+        font-family: 'Magtis';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 24px;
+        cursor: pointer;
+        color: #18625A;
+        text-align: center;
+    }
+}

@@ -1,24 +1,66 @@
-import './App.css';
-import { Routes, Route } from "react-router-dom";
-import Header from './components/Header/Header.jsx';
-import Home from './pages/Home/Home.jsx';
-import Login from './pages/Login/Login.jsx'
-import Registration from './pages/Registration/Registration.jsx';
 
-function App() {
-  return (
-    <div className="App">
-      <Header/>
-      <h1>Iimanbek</h1>
-      <p>fghjk</p>
+import React from 'react'
+import { Routes, Route, Link } from 'react-router-dom';
+import Landing from './pages/Landing/Landing.jsx'
+import Main from './pages/Dashboard/Main/Main.jsx'
+import Admin from './pages/Admin/Admin.js'
+import { ProtectedRoute } from './ProtectedRoute.js';
+import NewLogin from './pages/NewLogin/NewLogin.jsx'
+import NewRegistration from './pages/NewRegistration/NewRegistration.jsx'
+import Dashboard from './pages/Dashboard/Dashboard.jsx';
+export const App = () => {
+const [user, setUser] = React.useState(null);
 
-      <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/registration" element={<Registration/>} />
-      </Routes>
+const handleLogin = () => 
+  setUser({ 
+    id: '1', 
+    name: 'robin',
+    roles: ['admin'],
+  });
+
+const handleLogout = () => 
+  setUser(null);
+
+return (
+    <div>
+      {/* {user ? (
+        <button onClick={handleLogout}>Выйти</button>
+      ) : (
+        <button onClick={handleLogin}>Войти</button>
+      )} */}
+
+      {/* <Routes>
+        <Route index element={<Landing />} />
+        <Route path="landing" element={<Landing />} />
+
+        <Route path="login" element={<NewLogin/>} />
+        <Route path="registration" element={<NewRegistration />} />
+
+        <Route element={<ProtectedRoute isAllowed={!!user} />}>
+          <Route path="dashboard" element={<Main/>} />
+
+        </Route>
+
+        <Route
+          path="admin"
+          element={
+            <ProtectedRoute
+              redirectPath="/landing"
+              isAllowed={!!user && user.roles.includes('admin')}
+            >
+              <Admin />
+            </ProtectedRoute>
+          }
+        />
+        <Route path="*" element={<p>There's nothing here: 404!</p>} />
+
+      
+      </Routes> */}
+
+      <Dashboard/>
+    
     </div>
   );
-}
+};
 
-export default App;
+

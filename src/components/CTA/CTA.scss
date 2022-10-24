@@ -1,0 +1,205 @@
+.cta{
+    height: 90vh;
+    background-color: #ffffff;
+    padding-top: 50px;
+
+    .cta-headline{
+        text-align: center;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 30px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        color: #18625A;
+
+        span{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Magtis';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 24px;
+
+            color: #18625A;
+        }
+    }
+
+    .cta-section{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+
+        img{
+            width: 441px;
+            height: 496px;
+            
+            box-shadow: 0px 4px 24px 9px #18625b56;
+            border-radius: 12px;
+        }
+
+        .cta-text{
+            width: 50%;
+            padding-left: 150px;
+            h2{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 30px;
+                line-height: 15px;
+                letter-spacing: 0.03em;
+                color: #18625A;
+            }
+            span{
+                margin: 0px;
+                padding: 0px;
+                font-family: 'Magtis';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 24px;
+
+                color: #18625A;
+            }
+            a{
+                
+                border: 2px solid #18625A;
+                border-radius: 10px;
+                background-color: transparent;
+                padding: 10px 30px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 15px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+
+                color: #18625A;
+                text-decoration: none;
+            }
+
+            a:hover{
+                color: #fff;
+                background-color: #18625A;
+            }
+
+            p{
+                
+                font-family: 'Brygada 1918';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: 0.015em;
+
+                color: #18625A;
+                padding-top: 50px;
+                padding-bottom: 50px;
+            }
+        }
+    }
+
+    .cta-block{
+        position: relative;
+        top: -55%;
+        left: 27%;
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+
+        .cta-block-one{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 10px;
+
+            width: 290px;
+            height: 39px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px #18625b85;
+            border-radius: 10px;
+
+            font-family: 'Brygada 1918';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.015em;
+
+            color: #18625A;
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .cta-block-two{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 10px;
+
+            width: 290px;
+            height: 39px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px #18625b85;
+            border-radius: 10px;
+
+            font-family: 'Brygada 1918';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.015em;
+
+            color: #18625A;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .cta-block-three{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 15px 20px;
+            gap: 10px;
+
+            width: 290px;
+            height: 39px;
+
+            background: #FFFFFF;
+            box-shadow: 0px 4px 8px #18625b85;
+            border-radius: 10px;
+
+            font-family: 'Brygada 1918';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: 0.015em;
+
+            color: #18625A;
+            img{
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
