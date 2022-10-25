@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
 import Login from "./../NewLogin/NewLogin.jsx";
+import { useNavigate } from "react-router-dom";
 import './NewRegistration.scss'
 import icons1 from "../../assets/img/Facebook - Original.svg"
 import icons2 from "../../assets/img/VK - Original.svg"
 import icons3 from "../../assets/img/Google - Original.svg"
 import icons4 from "../../assets/img/path4.svg"
+import { Link } from "react-router-dom";
 function NewRegistration() {  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const [flag, setFlag] = useState(false);
   const [login, setLogin] = useState(true);
+  const navigate = useNavigate();
   
   function handleFormSubmit(e) {
     e.preventDefault();
@@ -100,7 +103,7 @@ function NewRegistration() {
               )}
             </form>
           ) : (
-            <Login />
+            navigate('/login')
           )}
         </div>
   );

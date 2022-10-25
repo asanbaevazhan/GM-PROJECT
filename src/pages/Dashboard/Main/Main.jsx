@@ -7,7 +7,7 @@ import Clothing from './Clothing/Clothing';
 import Accessories from './Accessories/Accessories';
 import HomeDecor from './HomeDecor/HomeDecor';
 import Gadgets from './Gadgets/Gadgets';
-
+import Dashboard from '../Dashboard';
 function Main() {
   return (
     <div className='main'>

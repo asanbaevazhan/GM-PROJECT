@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header.jsx";
 import TopHeader from "../../components/TopHeader/TopHeader.jsx";
-import Home from "./../Dashboard/Dashboard.jsx";
+import Dashboard from "./../Dashboard/Dashboard.jsx";
 import './NewLogin.scss'
 
 function NewLogin() {
@@ -12,7 +14,7 @@ function NewLogin() {
   const [flag, setFlag] = useState(false);
 
   const [home, setHome] = useState(true);
-
+  const navigate = useNavigate();
   function handleLogin(e) {
     e.preventDefault();
     let pass = localStorage
@@ -73,7 +75,7 @@ function NewLogin() {
           )}
         </form>
       ) : (
-        <Home />
+        navigate('/dashboard')
       )}
     </div>
   );
