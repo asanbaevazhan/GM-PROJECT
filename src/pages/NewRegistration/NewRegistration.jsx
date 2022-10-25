@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
 import Login from "./../NewLogin/NewLogin.jsx";
 import './NewRegistration.scss'
-
-function NewRegistration() {
+import icons1 from "../../assets/img/Facebook - Original.svg"
+import icons2 from "../../assets/img/VK - Original.svg"
+import icons3 from "../../assets/img/Google - Original.svg"
+import icons4 from "../../assets/img/path4.svg"
+function NewRegistration() {  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -34,10 +37,12 @@ function NewRegistration() {
 
 
   return (
-        <div>
+        <div className="registration-body">
           {" "}
           {login ? (
-            <form onSubmit={handleFormSubmit}>
+            <form
+            className="registration-form"  
+            onSubmit={handleFormSubmit}>
               <h2>Регистрация</h2>
 
               <div className="form-group">
@@ -46,7 +51,7 @@ function NewRegistration() {
                   autoComplete="off"
                   type="email"
                   className="form-control"
-                  placeholder="Введите почту"
+                  // placeholder="Введите почту"
                   onChange={(event) => setEmail(event.target.value)}
                 />
               </div>
@@ -57,7 +62,7 @@ function NewRegistration() {
                   autoComplete="off"
                   type="password"
                   className="form-control"
-                  placeholder="Введите пароль"
+                  // placeholder="Введите пароль"
                   onChange={(event) => setPassword(event.target.value)}
                 />
               </div>
@@ -68,19 +73,26 @@ function NewRegistration() {
                   autoComplete="off"
                   type="password"
                   className="form-control"
-                  placeholder="Повторите пароль"
+                  // placeholder="Повторите пароль"
                   onChange={(event) => setPassword(event.target.value)}
                 />
               </div>
-
-
               <button type="submit" className="btn btn-dark btn-lg btn-block">
                 Зарегистрироваться
               </button>
               <p onClick={handleClick} className="forgot-password text-right">
                Уже есть аккаунт?{" "} 
-                
               </p>
+              <p onClick={handleClick} className="under-p">
+              Зарегистрироваться с помощью{" "} 
+              </p>
+              <div className="svg-icons">
+              <img src={icons1} alt="an icon" />
+              <img src={icons2} alt="an icon" />
+              <img src={icons3} alt="an icon" />
+              <img src={icons4} alt="an icon" />
+              </div>  
+
               {flag && (
                 <Alert color="primary" variant="danger">
                   Не торопитесь! Каждое поле важно!

@@ -29,7 +29,7 @@ return (
         <button onClick={handleLogin}>Войти</button>
       )} */}
 
-      {/* <Routes>
+      <Routes>
         <Route index element={<Landing />} />
         <Route path="landing" element={<Landing />} />
 
@@ -55,9 +55,9 @@ return (
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
 
       
-      </Routes> */}
+      </Routes>
 
-      <Dashboard/>
+      {/* <Dashboard/> */}
     
     </div>
   );
