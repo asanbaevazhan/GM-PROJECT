@@ -1,0 +1,52 @@
+.new-wish {
+    margin: 0px ;
+    height: 40vh;
+}
+
+.new-wishlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 89px;
+    width: 70%;
+}
+
+.new-wishlist-card {
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #18625b42;
+    text-align: center;
+    cursor: pointer;
+
+    h3{
+        color: #18625A;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    p{
+        color: #18625A;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+}
+
+.new-wishlist-card:hover{
+    
+}
+
+.new-wishlist-product {
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+  
+  
