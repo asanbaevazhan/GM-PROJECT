@@ -1,7 +1,6 @@
 import {useState} from 'react';
 import {Routes, Route} from 'react-router-dom';
 import {Layout, Menu} from 'antd';
-import MUHeader from './MUHeader/MUHeader.jsx'
 import React from 'react';
 import './Dashboard.scss'
 
