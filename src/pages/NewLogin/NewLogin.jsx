@@ -35,32 +35,37 @@ function NewLogin() {
   return (
     <div>
       {home ? (
-        <form onSubmit={handleLogin}>
-          <h3>Войти</h3>
-          <div className="form-group">
+        <form
+         className="login-form" 
+         onSubmit={handleLogin}>
+          <h3>Логин</h3>
+          <div className="form-login">
             <label>Почта</label>
             <input
               type="email"
               className="form-control"
-              placeholder="Введите почту"
               onChange={(event) => setEmaillog(event.target.value)}
             />
           </div>
 
-          <div className="form-group">
+          <div className="form-login">
             <label>Пароль</label>
             <input
               type="password"
               className="form-control"
-              placeholder="Введите пароль"
-              onChange={(event) => setPasswordlog(event.target.value)}
-            />
+              onChange={(event) => setPasswordlog(event.target.value)} />
           </div>
 
           <button type="submit" className="btn btn-dark btn-lg btn-block">
             Войти
           </button>
+          <div className="under-login">
+            <a href="#">забыли пароль</a>
 
+            <p>или</p>
+            <a href="#">Зарегистрироваться </a>
+
+          </div>
           {flag && (
             <Alert color="primary" variant="warning">
               Заполните правильную информацию, иначе продолжайте попытки.
