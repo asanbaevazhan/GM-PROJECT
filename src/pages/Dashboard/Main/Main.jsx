@@ -4,6 +4,9 @@ import { Link, animateScroll as scroll } from "react-scroll";
 import PopularItems from './PopularItems/PopularItems';
 import New from './New/New';
 import Clothing from './Clothing/Clothing';
+import Accessories from './Accessories/Accessories';
+import HomeDecor from './HomeDecor/HomeDecor';
+import Gadgets from './Gadgets/Gadgets';
 
 function Main() {
   return (
@@ -90,6 +93,21 @@ function Main() {
         <div className="clothing" id='clothing'>
           <h2>Одежда</h2>
           <Clothing/>
+        </div>
+        
+        <div className="accessories" id='accessories'>
+          <h2>Аксессуары</h2>
+          <Accessories/>
+        </div>
+
+        <div className="home-decor" id='home-decor'>
+          <h2>Для дома</h2>
+          <HomeDecor/>
+        </div>
+
+        <div className="gadgets" id='gadgets'>
+          <h2>Гаджеты</h2>
+          <Gadgets/>
         </div>
     </div>
   )

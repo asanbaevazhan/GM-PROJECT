@@ -1,9 +1,9 @@
-.new-wish {
+.gadgets-wish {
     margin: 0px ;
-    height: 40vh;
+    height: 50vh;
 }
 
-.new-wishlist {
+.gadgets-wishlist {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,18 +12,16 @@
     width: 70%;
 }
 
-.new-wishlist-card {
+.gadgets-wishlist-card {
     border-radius: 10px;
     box-shadow: 5px 5px 15px 5px #18625b42;
     text-align: center;
     cursor: pointer;
 }
 
-.new-wishlist-product {
+.gadgets-wishlist-product {
     width: 350px;
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
 }
-  
-  

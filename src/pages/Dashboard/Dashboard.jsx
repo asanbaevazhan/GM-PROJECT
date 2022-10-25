@@ -25,9 +25,9 @@ function Dashboard() {
   const [collapsed, setCollapsed] = useState(false);
   return (
     <Layout
-      style={{
-        minHeight: '100vh',
-      }}
+      // style={{
+      //   minHeight: '100vh',
+      // }}
       
     >
       
