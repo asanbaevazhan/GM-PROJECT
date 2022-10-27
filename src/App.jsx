@@ -5,7 +5,7 @@ import Admin from "./pages/Admin/Admin.js";
 import { ProtectedRoute } from "./ProtectedRoute.js";
 import NewLogin from "./pages/NewLogin/NewLogin.jsx";
 import NewRegistration from "./pages/NewRegistration/NewRegistration.jsx";
-import Dashboard from "./pages/Dashboard/Dashboard.jsx";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 import Main from "./pages/Dashboard/Main/Main.jsx";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";

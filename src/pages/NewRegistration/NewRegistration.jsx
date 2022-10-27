@@ -1,13 +1,16 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
-import Login from "./../NewLogin/NewLogin.jsx";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './NewRegistration.scss'
+import Header from "../../components/Header/Header.jsx";
+import TopHeader from "../../components/TopHeader/TopHeader.jsx";
 import icons1 from "../../assets/img/Facebook - Original.svg"
 import icons2 from "../../assets/img/VK - Original.svg"
 import icons3 from "../../assets/img/Google - Original.svg"
 import icons4 from "../../assets/img/path4.svg"
-import { Link } from "react-router-dom";
+
+
 function NewRegistration() {  
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -40,6 +43,10 @@ function NewRegistration() {
 
 
   return (
+    <div className="header-registration">
+        <TopHeader/>
+        <Header/>
+    
         <div className="registration-body">
           {" "}
           {login ? (
@@ -83,11 +90,13 @@ function NewRegistration() {
               <button type="submit" className="btn btn-dark btn-lg btn-block">
                 Зарегистрироваться
               </button>
+
               <p onClick={handleClick} className="forgot-password text-right">
-               Уже есть аккаунт?{" "} 
+                <Link to="/login" className="login-link"> Уже есть аккаунт?</Link>
               </p>
+
               <p onClick={handleClick} className="under-p">
-              Зарегистрироваться с помощью{" "} 
+                Зарегистрироваться с помощью{" "} 
               </p>
               <div className="svg-icons">
               <img src={icons1} alt="an icon" />
@@ -103,8 +112,8 @@ function NewRegistration() {
               )}
             </form>
           ) : (
-            navigate('/login')
-          )}
+            navigate('/dashboard')
+          )}</div>
         </div>
   );
 }

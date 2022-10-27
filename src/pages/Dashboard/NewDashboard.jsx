@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Layout, Menu } from "antd";
 import React from "react";
-import "./Dashboard.scss";
+import "./NewDashboard.scss";
 import "antd/dist/antd.css";
 import Icon from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
@@ -9,7 +9,7 @@ import { Link, Outlet } from "react-router-dom";
 
 const { Sider } = Layout;
 
-function Dashboard() {
+function NewDashboard() {
   const navigate = useNavigate();
 
   const [collapsed, setCollapsed] = useState(false);
@@ -196,7 +196,8 @@ function Dashboard() {
         collapsible
         collapsed={collapsed}
         onCollapse={(value) => setCollapsed(value)}
-        
+        style={{
+        }}
       >
         <div className="side-bar-logo">
           <h1>G</h1>
@@ -255,4 +256,4 @@ function Dashboard() {
   );
 }
 
-export default Dashboard;
+export default NewDashboard;
