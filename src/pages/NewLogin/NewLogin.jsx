@@ -36,9 +36,6 @@ function NewLogin() {
 
   return (
     <div className="header-login">
-      <TopHeader/>
-      <Header/>
-    
       <div className="content-body">
         {home ? (
          <form

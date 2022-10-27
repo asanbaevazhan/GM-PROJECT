@@ -18,7 +18,12 @@ const StoreDrawer = () => {
       <MenuOutlined 
         onClick={showDrawer}
       />
-      <Drawer title="Меню" placement="right" onClose={onClose} open={open}>
+      <Drawer 
+        title="Меню" 
+        placement="right" 
+        onClose={onClose} 
+        open={open}
+      >
         <DrawerContent/>
       </Drawer>
     </>

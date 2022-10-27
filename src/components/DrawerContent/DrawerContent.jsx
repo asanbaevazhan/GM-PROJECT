@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom'
 import './DrawerContent.scss'
 
 import myprofile from './../../assets/side-bar-icons/my-account.svg'
+import myfriends from './../../assets/side-bar-icons/my-friends.svg'
+import mygifts from './../../assets/side-bar-icons/gift.svg'
+import myholidays from './../../assets/side-bar-icons/holidays.svg'
+import help from './../../assets/side-bar-icons/help.svg'
+import aboutus from './../../assets/side-bar-icons/aboutus.svg'
 
 function DrawerContent() {
   return (
@@ -13,27 +18,28 @@ function DrawerContent() {
             Моя страница
         </Link>
 
-        <Link to="/my-friends">
+        <Link to="/my-friends" className='my-profile'>
+            <img src={myfriends} alt="" />
             Мои друзья
         </Link>
 
-        <Link to="/my-gifts">
+        <Link to="/my-gifts" className='my-profile'>
+            <img src={mygifts} alt="" />
             Мои подарки
         </Link>
 
-        <Link to="/my-holidays">
+        <Link to="/my-holidays" className='my-profile'>
+            <img src={myholidays} alt="" />
             Мои праздники
         </Link>
 
-        <Link to="/cart">
-            Корзина
-        </Link>
-
-        <Link to="/help">
+        <Link to="/help" className='my-profile'>
+            <img src={help} alt="" />
             Помощь
         </Link>
 
-        <Link to="/about-us">
+        <Link to="/about-us" className='my-profile'>
+            <img src={aboutus} alt="" />
             О нас
         </Link>
 

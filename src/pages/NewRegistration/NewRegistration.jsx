@@ -44,9 +44,6 @@ function NewRegistration() {
 
   return (
     <div className="header-registration">
-        <TopHeader/>
-        <Header/>
-    
         <div className="registration-body">
           {" "}
           {login ? (
@@ -95,8 +92,8 @@ function NewRegistration() {
                 <Link to="/login" className="login-link"> Уже есть аккаунт?</Link>
               </p>
 
-              <p onClick={handleClick} className="under-p">
-                Зарегистрироваться с помощью{" "} 
+              <p className="under-p">
+                Зарегистрироваться с помощью
               </p>
               <div className="svg-icons">
               <img src={icons1} alt="an icon" />
