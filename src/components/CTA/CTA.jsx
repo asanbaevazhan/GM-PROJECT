@@ -15,7 +15,7 @@ function CTA() {
             <img src={ctaImg} alt="" />
             <div className='cta-text'>
                 <h2>Готовы попробовать <span>GiftMe</span> ?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora obcaecati animi quidem nam, temporibus, maxime fuga accusantium aut, odio sequi consequuntur impedit laboriosam! Possimus enim voluptas explicabo adipisci incidunt ut deserunt recusandae consequatur nisi harum delectus reprehenderit, eligendi quam voluptatibus error obcaecati sunt illum temporibus voluptatem et. Commodi, itaque pariatur?</p>
+                <p> <span>GiftMe</span> – это веб-сервис, где пользователи могут размещать свои желаемые подарки и делать подарки другим. А также делиться вещами, которые не используются, но могут пригодиться друзьям.</p>
                 <a href="/registration">Присоединяйтесь сейчас</a>
             </div>
         </div>

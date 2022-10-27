@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Line from '../../assets/img/Line.svg';
 import { useNavigate } from "react-router-dom";
 import Header from "../../components/Header/Header.jsx";
 import TopHeader from "../../components/TopHeader/TopHeader.jsx";
-import Dashboard from "./../Dashboard/Dashboard.jsx";
 import './NewLogin.scss'
 
 function NewLogin() {
@@ -35,12 +35,16 @@ function NewLogin() {
   }
 
   return (
-    <div>
-      {home ? (
-        <form
-         className="login-form" 
-         onSubmit={handleLogin}>
-          <h3>Логин</h3>
+    <div className="header-login">
+      <TopHeader/>
+      <Header/>
+    
+      <div className="content-body">
+        {home ? (
+         <form
+          className="login-form" 
+          onSubmit={handleLogin}>
+          <h3>Войти</h3>
           <div className="form-login">
             <label>Почта</label>
             <input
@@ -64,8 +68,13 @@ function NewLogin() {
           <div className="under-login">
             <a href="#">забыли пароль</a>
 
-            <p>или</p>
-            <a href="#">Зарегистрироваться </a>
+            <div className='or'>
+                <img className='line' src={Line} alt="" />
+                или
+                <img className='line' src={Line} alt="" />
+            </div>
+            
+            <Link to="/registration"> Зарегистрироваться </Link>
 
           </div>
           {flag && (
@@ -77,6 +86,7 @@ function NewLogin() {
       ) : (
         navigate('/dashboard')
       )}
+    </div>
     </div>
   );
 }
