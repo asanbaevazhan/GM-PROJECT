@@ -17,27 +17,11 @@ import Cart from "./pages/Dashboard/Cart/Cart";
 import Settings from "./pages/Dashboard/Settings/Settings";
 import Help from "./pages/Dashboard/Help/Help";
 import AboutUsPage from "./pages/Dashboard/AboutUsPage/AboutUsPage";
+import StoreHome from "./pages/StoreHome/StoreHome.jsx";
 
 export const App = () => {
-  const [user, setUser] = React.useState(null);
-
-  const handleLogin = () =>
-    setUser({
-      id: "1",
-      name: "robin",
-      roles: ["admin"],
-    });
-
-  const handleLogout = () => setUser(null);
-
   return (
     <div>
-      {/* {user ? (
-        <button onClick={handleLogout}>Выйти</button>
-      ) : (
-        <button onClick={handleLogin}>Войти</button>
-      )} */}
-
       <Routes>
         <Route index element={<Landing />} />
         <Route path="/landing" element={<Landing />} />
@@ -45,24 +29,9 @@ export const App = () => {
         <Route path="/login" element={<NewLogin />} />
         <Route path="/registration" element={<NewRegistration />} />
 
-        {/* <Route element={<ProtectedRoute isAllowed={!!user} />}>
-        </Route> */}
-        {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-
-        <Route
-          path="admin"
-          element={
-            <ProtectedRoute
-              redirectPath="/landing"
-              isAllowed={!!user && user.roles.includes("admin")}
-            >
-              <Admin />
-            </ProtectedRoute>
-          }
-        />
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
 
-        <Route path="/dashboard" element={<Dashboard />}>
+        {/* <Route path="/dashboard" element={<Dashboard />}>
           <Route index element={<Main />} />
           <Route path="dashboard/main" element={<Main />} />
           <Route path="dashboard/my-profile" element={<MyProfile />} />
@@ -74,10 +43,14 @@ export const App = () => {
           <Route path="dashboard/settings" element={<Settings />} />
           <Route path="dashboard/help" element={<Help />} />
           <Route path="dashboard/about-us" element={<AboutUsPage />} />
+        </Route> */}
+        <Route path="/store-home" element={<Main/>}>
+          <Route index element={<Main/>} />
         </Route>
-      </Routes>
 
-      {/* <Dashboard/> */}
+        <Route path="/store-wishlist" element={<Wishlist/>} />
+
+      </Routes>
     </div>
   );
 };

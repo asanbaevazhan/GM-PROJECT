@@ -5,11 +5,10 @@
 
 .accessories-wishlist {
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 50px;
-    width: 70%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 95%;
 }
 
 .accessories-wishlist-card {

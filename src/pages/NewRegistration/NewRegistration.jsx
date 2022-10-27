@@ -112,7 +112,7 @@ function NewRegistration() {
               )}
             </form>
           ) : (
-            navigate('/dashboard')
+            navigate('/store-home')
           )}</div>
         </div>
   );

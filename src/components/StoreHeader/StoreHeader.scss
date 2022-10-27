@@ -1,0 +1,95 @@
+.store-header{
+    height: 75px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: #18625A;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .store-logo > p{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Magtis';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 24px;
+        cursor: pointer;
+        color: #ffffff;
+    }
+
+    .store-logo{
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 34px;
+    }
+
+    .store-nav{
+        gap: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: #fff;
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 0.015em;
+            cursor: pointer;
+        }
+        
+    }
+
+    .store-sd{
+        // width: 50%;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .nav-link {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+        opacity: 1;
+
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.015em;
+        cursor: pointer;
+      }
+      
+      .nav-link:hover {
+        opacity: 1;
+      }
+      
+      .nav-link::before {
+        transition: 300ms;
+        height: 5px;
+        content: "";
+        position: absolute;
+        background-color: #fff;
+      }
+      
+      .nav-link-ltr::before {
+        width: 0%;
+        bottom: 10px;
+      }
+      
+      .nav-link-ltr:hover::before {
+        width: 100%;
+      }
+}

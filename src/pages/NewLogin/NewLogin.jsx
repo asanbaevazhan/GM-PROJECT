@@ -84,7 +84,7 @@ function NewLogin() {
           )}
         </form>
       ) : (
-        navigate('/dashboard')
+        navigate('/store-home')
       )}
     </div>
     </div>

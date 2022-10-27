@@ -7,10 +7,12 @@ import Clothing from './Clothing/Clothing';
 import Accessories from './Accessories/Accessories';
 import HomeDecor from './HomeDecor/HomeDecor';
 import Gadgets from './Gadgets/Gadgets';
+import StoreHeader from '../../../components/StoreHeader/StoreHeader';
 
 function Main() {
   return (
     <div className='main'>
+      <StoreHeader/>
         <div className='main-bg'>
           <div className='main-text'>
             <h1>GiftMe</h1>
