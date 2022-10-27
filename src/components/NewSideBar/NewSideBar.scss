@@ -47,12 +47,6 @@
 .ant-menu-item:hover{
     border-top: 1px solid #18625A;
     border-bottom: 1px solid #18625A;
-    
-}
-
-
-.ant-menu-item::after{
-   
 }
 
 .ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after, .ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after {
@@ -72,6 +66,7 @@
 }
 
 .side-bar{
+    
     h1{
         margin: 10px;
         padding: 20px;
@@ -85,3 +80,4 @@
         text-align: center;
     }
 }
+

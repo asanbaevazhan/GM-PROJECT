@@ -1,0 +1,32 @@
+.accessories-wish {
+    margin: 0px ;
+    height: 40vh;
+}
+
+.accessories-wishlist {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    width: 70%;
+}
+
+.accessories-wishlist-card {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #18625b42;
+    text-align: center;
+}
+
+.accessories-wishlist-card:hover{
+    
+}
+
+.accessories-wishlist-product {
+    border-radius: 10px;
+    width: 270px;
+    height: 270px;
+    object-fit: cover;
+}
+  
