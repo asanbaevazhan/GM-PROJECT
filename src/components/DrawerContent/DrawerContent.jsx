@@ -13,32 +13,32 @@ function DrawerContent() {
   return (
     <div className='drawer-content'>
 
-        <Link to="/my-profile" className='my-profile'>
+        <Link to="/store-my-profile" className='my-profile'>
             <img src={myprofile} alt="" />
             Моя страница
         </Link>
 
-        <Link to="/my-friends" className='my-profile'>
+        <Link to="/store-my-friends" className='my-profile'>
             <img src={myfriends} alt="" />
             Мои друзья
         </Link>
 
-        <Link to="/my-gifts" className='my-profile'>
+        <Link to="/store-my-gifts" className='my-profile'>
             <img src={mygifts} alt="" />
             Мои подарки
         </Link>
 
-        <Link to="/my-holidays" className='my-profile'>
+        <Link to="/store-my-holidays" className='my-profile'>
             <img src={myholidays} alt="" />
             Мои праздники
         </Link>
 
-        <Link to="/help" className='my-profile'>
+        <Link to="/store-help" className='my-profile'>
             <img src={help} alt="" />
             Помощь
         </Link>
 
-        <Link to="/about-us" className='my-profile'>
+        <Link to="/store-about-us" className='my-profile'>
             <img src={aboutus} alt="" />
             О нас
         </Link>

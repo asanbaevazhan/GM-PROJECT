@@ -1,12 +1,10 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
+import './App.scss';
+
 import Landing from "./pages/Landing/Landing.jsx";
-import Admin from "./pages/Admin/Admin.js";
-import { ProtectedRoute } from "./ProtectedRoute.js";
 import NewLogin from "./pages/NewLogin/NewLogin.jsx";
 import NewRegistration from "./pages/NewRegistration/NewRegistration.jsx";
-import Dashboard from "./pages/Dashboard/Dashboard";
-import './App.scss';
 import Main from "./pages/Dashboard/Main/Main.jsx";
 import MyProfile from "./pages/Dashboard/MyProfile/MyProfile";
 import MyFriends from "./pages/Dashboard/MyFriends/MyFriends";
@@ -14,15 +12,17 @@ import MyGifts from "./pages/Dashboard/MyGifts/MyGifts";
 import MyHolidays from "./pages/Dashboard/MyHolidays/MyHolidays";
 import Wishlist from "./pages/Dashboard/Wishlist/Wishlist";
 import Cart from "./pages/Dashboard/Cart/Cart";
-import Settings from "./pages/Dashboard/Settings/Settings";
 import Help from "./pages/Dashboard/Help/Help";
 import AboutUsPage from "./pages/Dashboard/AboutUsPage/AboutUsPage";
-import StoreHome from "./pages/StoreHome/StoreHome.jsx";
+import { OrderPage } from "./pages/order-page";
+import { ProductPage } from "./pages/product-page/product-page";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 export const App = () => {
   return (
-    <div>
-      <Routes>
+      <Provider store={ store }>
+        <Routes>
         <Route index element={<Landing />} />
         <Route path="/landing" element={<Landing />} />
 
@@ -31,26 +31,23 @@ export const App = () => {
 
         <Route path="*" element={<p>There's nothing here: 404!</p>} />
 
-        {/* <Route path="/dashboard" element={<Dashboard />}>
-          <Route index element={<Main />} />
-          <Route path="dashboard/main" element={<Main />} />
-          <Route path="dashboard/my-profile" element={<MyProfile />} />
-          <Route path="dashboard/my-friends" element={<MyFriends />} />
-          <Route path="dashboard/my-gifts" element={<MyGifts />} />
-          <Route path="dashboard/my-holidays" element={<MyHolidays />} />
-          <Route path="dashboard/wishlist" element={<Wishlist />} />
-          <Route path="dashboard/cart" element={<Cart />} />
-          <Route path="dashboard/settings" element={<Settings />} />
-          <Route path="dashboard/help" element={<Help />} />
-          <Route path="dashboard/about-us" element={<AboutUsPage />} />
-        </Route> */}
         <Route path="/store-home" element={<Main/>}>
           <Route index element={<Main/>} />
         </Route>
 
         <Route path="/store-wishlist" element={<Wishlist/>} />
+        <Route path="/store-my-profile" element={<MyProfile/>} />
+        <Route path="/store-my-friends" element={<MyFriends/>} />
+        <Route path="/store-my-gifts" element={<MyGifts/>} />
+        <Route path="/store-my-holidays" element={<MyHolidays/>} />
+        <Route path="/store-help" element={<Help/>} />
+        <Route path="/store-about-us" element={<AboutUsPage/>} />
+        <Route path="/store-cart" element={<Cart/>} />
+
+        <Route  path="/order" element={ <OrderPage /> } />
+        <Route  path="/app/:title" element={ <ProductPage /> } />
 
       </Routes>
-    </div>
+      </Provider>
   );
 };

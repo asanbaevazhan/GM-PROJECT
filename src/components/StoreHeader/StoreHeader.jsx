@@ -6,6 +6,8 @@ import cart from './../../assets/side-bar-icons/shopping-cart.svg'
 import StoreDrawer from '../StoreDrawer/StoreDrawer'
 import StoreSearch from '../StoreSearch/StoreSearch'
 import SettingsDrawer from '../SettingsDrawer/SettingsDrawer'
+import { CartBlock } from '../cart-block/cart-block'
+
 
 function StoreHeader() {
   return (
@@ -21,6 +23,7 @@ function StoreHeader() {
 
        <div className='store-sd'>
             <StoreSearch/>
+            <CartBlock/>
             <SettingsDrawer/>
             <StoreDrawer/>
        </div>

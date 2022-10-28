@@ -1,0 +1,17 @@
+.product-page__content {
+    display: flex;
+}
+
+.product-page__left {
+    width: 70%;
+}
+
+.product-page__right {
+    width: 30%;
+}
+
+.product-page__buy-product {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}

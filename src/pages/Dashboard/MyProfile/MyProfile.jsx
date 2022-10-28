@@ -5,8 +5,11 @@ import icons2 from '../../../assets/icons/instagram.svg'
 import icons3 from '../../../assets/icons/twitter.svg'
 import Ellipse21 from '../../../assets/img/Ellipse 21.png'
 import ICON9 from '../../../assets/icons/icons8-отмена.svg'
+import StoreHeader from '../../../components/StoreHeader/StoreHeader'
 function MyProfile() {
   return (
+    <div>
+    <StoreHeader/>
     <div className='body-mypage'>
       <div className='profile-wrapper'>
         <div className='profiile-main'>
@@ -64,6 +67,7 @@ function MyProfile() {
           </div>
           <img src={ICON9} alt="an icon" />
       </footer>
+    </div>
     </div>
   )
 }

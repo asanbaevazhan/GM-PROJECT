@@ -3,8 +3,6 @@ import { Alert } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Line from '../../assets/img/Line.svg';
 import { useNavigate } from "react-router-dom";
-import Header from "../../components/Header/Header.jsx";
-import TopHeader from "../../components/TopHeader/TopHeader.jsx";
 import './NewLogin.scss'
 
 function NewLogin() {

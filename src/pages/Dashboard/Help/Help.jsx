@@ -1,9 +1,13 @@
 import React from 'react'
+import StoreHeader from '../../../components/StoreHeader/StoreHeader'
 import './Help.scss'
 
 function Help() {
   return (
-    <div>Help</div>
+    <div>
+      <StoreHeader/>
+      Help
+    </div>
   )
 }
 

@@ -8,12 +8,14 @@ import Accessories from './Accessories/Accessories';
 import HomeDecor from './HomeDecor/HomeDecor';
 import Gadgets from './Gadgets/Gadgets';
 import StoreHeader from '../../../components/StoreHeader/StoreHeader';
+import { HomePage } from '../../home-page/home-page';
 
 function Main() {
   return (
     <div className='main'>
       <StoreHeader/>
-        <div className='main-bg'>
+      <HomePage/>
+        {/* <div className='main-bg'>
           <div className='main-text'>
             <h1>GiftMe</h1>
             <p>Вызываем улыбку на лице</p>
@@ -110,7 +112,7 @@ function Main() {
         <div className="gadgets" id='gadgets'>
           <h2>Гаджеты</h2>
           <Gadgets/>
-        </div>
+        </div> */}
     </div>
   )
 }

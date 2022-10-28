@@ -9,10 +9,12 @@ import Rectangle1 from '../../../assets/img/Rectangle1.png'
 import Rectangle2 from '../../../assets/img/Rectangle2.png'
 import Rectangle3 from '../../../assets/img/Rectangle3.png'
 import Rectangle4 from '../../../assets/img/Rectangle4.png'
+import StoreHeader from '../../../components/StoreHeader/StoreHeader'
 
 function MyFriends() {
   return (
     <div className='profile-body'>
+      <StoreHeader/>
         <header className='profile-header'>
                 <div className='image-profile'>
                   <img src={Ellipse} alt="an image" />

@@ -1,14 +1,14 @@
 .profile-body{
-    padding: 60px 60px;
-    background: white;
-    width: 100%;
+    
 
 }
 .profile-header{
     display: flex;
     align-items: center;
     max-width: 100%;
-    
+    padding: 60px 60px;
+    background: white;
+    width: 100%;
 }
 .profile-header .text-profile{
     padding-left: 40px;
@@ -43,10 +43,11 @@
 }
 .profile-body{
     .nav-panel{
+        padding-left: 40px;
         width: 100%;
-        margin: 15px 0px 0px 0px;
+        margin: 10px 0px 40px 0px;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         border-top: 1px solid grey;
         border-bottom: 1px solid grey;
         padding: 18px 5px 18px 5px ;

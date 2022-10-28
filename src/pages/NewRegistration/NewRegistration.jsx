@@ -3,8 +3,7 @@ import { Alert } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './NewRegistration.scss'
-import Header from "../../components/Header/Header.jsx";
-import TopHeader from "../../components/TopHeader/TopHeader.jsx";
+
 import icons1 from "../../assets/img/Facebook - Original.svg"
 import icons2 from "../../assets/img/VK - Original.svg"
 import icons3 from "../../assets/img/Google - Original.svg"
