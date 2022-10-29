@@ -1,0 +1,54 @@
+.final-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+
+    h2{
+        width: 50%;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 30px;
+        color: #18625A;
+        text-align: center;
+    }
+
+    p{
+        width: 40%;
+        font-family: 'Brygada 1918';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        text-align: center;
+        color: #18625A;
+        padding-bottom: 10px;
+    }
+
+    a{
+                
+        border: 2px solid #18625A;
+        border-radius: 10px;
+        background-color: transparent;
+        padding: 10px 30px;
+
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 15px;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #18625A;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: #fff;
+        background-color: #18625A;
+    }
+}

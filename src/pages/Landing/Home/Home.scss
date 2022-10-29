@@ -1,0 +1,107 @@
+.home{
+    height: 80vh;
+    background: #18625A;
+    
+
+    .home2{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 70px;
+        height: 80vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-image: url('./../../../assets/img/new-bg.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        mix-blend-mode: hard-light;
+
+        .headline{
+            position: relative;
+            top: -50px;
+            p{
+                position: relative;
+                top: 100px;
+                left: 10px;
+
+                padding: 0px;
+                color: #fff;
+                font-family: 'Brygada 1918';
+                font-style: italic;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 17px;
+
+                letter-spacing: 0.015em;
+            }
+            h1{
+                color: rgb(255, 255, 255);
+                font-family: 'Magtis';
+                font-size: 170px;
+                padding-top: 50px;
+            }
+
+            a{
+                position: relative;
+                top: -120px;
+                left: 10px;
+                border: 2px solid #fff;
+                border-radius: 10px;
+                background-color: transparent;
+                padding: 10px 30px;
+
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 15px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            a:hover{
+                font-size: 17px;
+            }
+        }  
+    }
+
+    .img{
+            position: absolute;
+            top: -50px;
+            left: 100px;
+
+        .img-1{
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            left: 719.97px;
+            top: 203.21px;
+
+            filter: drop-shadow(0px 4px 9px rgb(255, 255, 255));
+        }
+
+        .img-2{
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            left: 699.16px;
+            top: 387.74px;
+
+            filter: drop-shadow(0px 4px 9px rgb(255, 255, 255));
+        }
+
+        .img-3{
+            position: absolute;
+            width: 340px;
+            height: 340px;
+            left: 951.36px;
+            top: 308.19px;
+
+            filter: drop-shadow(0px 4px 9px rgb(255, 255, 255));
+        }
+    }
+    
+}

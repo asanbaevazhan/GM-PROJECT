@@ -1,0 +1,16 @@
+.drawer-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+    
+    a{
+        text-decoration: none;
+        color: #18625A;
+    }
+
+    .my-profile{
+        display: flex;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,96 @@
+.wish {
+  margin: 0px ;
+  height: 50vh;
+  padding-left: -20px;
+}
+
+.wishlist {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 95%;
+}
+
+.wishlist-card {
+  padding: 10px ;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px 5px #18625b42;
+  text-align: center;
+  cursor: pointer;
+
+  h3{
+    color: #18625A;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  p{
+    color: #18625A;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+}
+
+.wishlist-card:hover{
+    
+}
+
+.wishlist-product {
+    width: 249px;
+    height: 249px;
+    object-fit: contain;
+}
+
+.btn{
+    border: none;
+    color: #18625A;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.btn:hover{
+    border: none;
+    color: #18625A;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: underline;
+}
+
+.btn2{
+    background-color: #18625A;
+    padding: 5px 15px;
+    border: none;
+    color: #ffffff;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: double;
+}
+
+.card-modal{
+    color: #18625A;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}

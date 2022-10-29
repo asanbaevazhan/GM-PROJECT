@@ -1,9 +1,9 @@
 import React from 'react'
 import './Header.scss'
-import { Link } from 'react-router-dom';
-import login from './../../assets/icons/login.svg'
+import login from '../../assets/icons/login.svg'
 
 import { useNavigate } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Header() {
   const navigate = useNavigate();
@@ -12,24 +12,57 @@ function Header() {
     navigate('/');
   }
   return (
-    <div className='header'>
-       
+    <div className='header-two'>
        <div className='logo' onClick={handleLogo}>
-        <p>GIFTME</p>
+        <p>GiftMe</p>
        </div>
 
        <div className="nav-bar">
-          <Link to="/" className='nav-link nav-link-ltr'> Главная </Link>
-          <Link to="/about-us" className='nav-link nav-link-ltr'> О нас </Link>
-          <Link to="/novelties" className='nav-link nav-link-ltr'> Hовинки </Link>
-       </div>
+          <Link
+            className='nav-link nav-link-ltr'
+            onClick={handleLogo}
+            activeClass="active"
+            to="/home"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Главная
+          </Link>
 
-       <div className="login">
-          <Link to="/login" className='nav-link nav-link-ltr'> 
-            <img src={login} alt="" />
+          <Link
+            className='nav-link nav-link-ltr'
+            onClick={handleLogo}
+            activeClass="active"
+            to="about-us"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            О нас
+          </Link>
+
+          <Link
+            className='nav-link nav-link-ltr'
+            onClick={handleLogo}
+            activeClass="active"
+            to="news"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Новости
           </Link>
        </div>
 
+        <div className='login'>
+            <a href="/registration" >
+                <img src={login} alt="" />
+            </a>
+        </div>
 
     </div>
   )

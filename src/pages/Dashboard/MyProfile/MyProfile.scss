@@ -1,0 +1,134 @@
+.body-mypage{
+    height: 100%;
+    padding: 40px 40px;
+}
+.profile-wrapper{
+    margin: 0;
+    border: 1px solid transparent ;
+    display: flex;
+}
+.profiile-main{    
+    border-right: 1px solid #dfdfdf;
+    width: 28%;
+    padding: 50px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: white;
+
+
+    p{
+        a{
+            color: black;
+            text-decoration: underline;
+        }
+    }
+    h1{
+        padding: 0;
+        margin: 8% 0 5% 0;
+    }
+    p{
+        margin: 0;
+        margin: 0 0 8% 0;
+    }
+    button{
+        margin: 0 0 12% 0;
+        padding: 2% 5%;
+        background: #00796B;
+        border: none;
+        color: white;
+    }
+    button:hover{
+        background: white;
+        color: black;
+        border:1px solid #00796B;
+    }
+    .profile-image{
+        max-width: 100px;
+        border-radius:100%;
+        border: 5px solid  rgba(34, 60, 80, 0.543);
+        box-shadow: 0px 0px 20px 2px rgba(34, 60, 80, 0.2);
+         img{
+            height: 90px;
+            width: 90px;  
+        }
+    }
+    .profile-icons{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.profile-wrapper-right{
+    width:100%;
+
+    .under-wrapper-right{
+
+        
+        border-bottom: 1px solid #dfdfdf;
+        background: white;
+        padding: 3% 0 0 9%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        .right-content{
+            height: 33%;
+            width: 33%;
+            span{
+                font-weight: bold;
+            }
+        }       
+    }
+    .right-content2{
+
+        height: 33%;
+        border-bottom: 1px solid #dfdfdf;
+        background: white;
+        padding: 3% 0 2% 9%;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        .el-wrapper{
+
+            p{
+                padding: 0;
+                margin: 0%;
+            }
+            display: flex;
+            width: 33%;
+            flex-direction: column;
+            span{
+                margin-top: 10px;
+                font-weight: bold;
+            }
+        }
+    }
+    .right-content3{
+        height: 152px;
+        background: white;
+        padding: 3% 2%  0 9%;
+    }
+    
+}
+.ADS-wrapper{
+        background-image: url(./../../../assets/img/final-cta-bg.jpg);
+        background-size: cover;
+        width: 100%;
+        height: 250px;
+        position: fixed;
+        top: 550px;
+    }
+footer {
+    img {
+        position: relative;
+        top: 90px;
+        left: -10px;
+        z-index: 9;
+        background: white;
+        border-radius: 100%;
+    }
+}    
