@@ -33,6 +33,8 @@ export const App = () => {
 
         <Route path="/store-home" element={<Main/>}>
           <Route index element={<Main/>} />
+          <Route path="/store-home/order" element={ <OrderPage /> } />
+          <Route path="/store-home/:title" element={ <ProductPage /> } />
         </Route>
 
         <Route path="/store-wishlist" element={<Wishlist/>} />
@@ -44,8 +46,7 @@ export const App = () => {
         <Route path="/store-about-us" element={<AboutUsPage/>} />
         <Route path="/store-cart" element={<Cart/>} />
 
-        <Route  path="/order" element={ <OrderPage /> } />
-        <Route  path="/app/:title" element={ <ProductPage /> } />
+        
 
       </Routes>
       </Provider>

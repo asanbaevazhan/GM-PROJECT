@@ -21,11 +21,6 @@ export const ProductItem = ({ product }) => {
       <ProductCover image={product.image} />
       <div className="product-item__details">
         <span className="product-item__title">{product.title}</span>
-        <div className="product-item__genre">
-          {product.category.map((category) => (
-            <ProductCategory genre={category} key={category} />
-          ))}
-        </div>
         <div className="product-item__buy">
           <ProductBuy product={product} />
         </div>

@@ -2,11 +2,12 @@
     position: absolute;
     top: 30px;
     left: -350px;
-    background-color: #dfdfdf;
+    background-color: #18625A;
     width: 400px;
     padding: 10px 20px;
     z-index: 2;
     border-radius: 15px;
+    border: 1px solid #dfdfdf;
 }
 
 .cart-menu__arrange {

@@ -9,15 +9,15 @@ export const CartMenu = ({ onClick }) => {
   const items = useSelector((state) => state.cart.itemsInCart);
   return (
     <div className="cart-menu">
-      <div className="cart-menu__games-list">
+      <div className="cart-menu__products-list">
         {items.length > 0
-          ? items.map((game) => (
+          ? items.map((product) => (
               <CartItem
-                key={game.image}
-                image={game.image}
-                price={game.price}
-                title={game.title}
-                id={game.id}
+                key={product.image}
+                image={product.image}
+                price={product.price}
+                title={product.title}
+                id={product.id}
               />
             ))
           : "Корзина пуста"}

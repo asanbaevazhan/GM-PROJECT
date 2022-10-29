@@ -1,26 +1,14 @@
-.home-decor-wish {
-    margin: 0px ;
-    height: 50vh;
-}
 
-.home-decor-wishlist {
+
+.home-decor-page{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
     display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 95%;
-}
-
-.home-decor-wishlist-card {
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px 5px #18625b42;
-    text-align: center;
-    cursor: pointer;
-}
-
-.home-decor-wishlist-product {
-    width: 600px;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
 }

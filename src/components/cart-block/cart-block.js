@@ -12,6 +12,7 @@ export const CartBlock = () => {
   const items = useSelector((state) => state.cart.itemsInCart);
   const navigate = useNavigate();
   const totalPrice = calcTotalPrice(items);
+
   const handleGoToOrderClick = useCallback(() => {
     setIsCartMenuVisible(false);
     navigate('/order');
@@ -24,11 +25,6 @@ export const CartBlock = () => {
         onClick={() => setIsCartMenuVisible(!isCartMenuVisible)}>
         <img src={cart} alt="" />
       </div>
-      {/* <BiCartAlt
-        color="white"
-        size={25}
-        
-      /> */}
       {totalPrice > 0 ? (
         <span className="total-price">{totalPrice} сом.</span>
       ) : null}

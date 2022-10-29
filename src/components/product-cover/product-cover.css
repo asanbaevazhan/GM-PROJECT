@@ -1,7 +1,9 @@
 .product-cover {
-    height: 170px;
-    width: 100%;
-    background-size: cover;
+    height: 200px;
+    width: 270px;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
-    border-radius: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }

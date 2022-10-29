@@ -16,8 +16,8 @@ function StoreHeader() {
           <p>GiftMe</p>
           
           <div className='store-nav'>
-               <Link to="/store-home" >Главная</Link>
-               <Link to="/store-wishlist" >Список желаний</Link>
+               <Link to="/store-home" className='nav-link-ltr' >Главная</Link>
+               <Link to="/store-wishlist" className='nav-link-ltr' >Список желаний</Link>
           </div>
        </div>
 

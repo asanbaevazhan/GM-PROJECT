@@ -4,6 +4,7 @@ import { Button } from "../button/button";
 import { setItemInCart, deleteItemFromCart } from "../../store/cart/reducer";
 import "./product-buy.css";
 
+
 export const ProductBuy = ({ product }) => {
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cart.itemsInCart);

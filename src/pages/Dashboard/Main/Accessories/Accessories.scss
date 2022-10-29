@@ -1,31 +1,12 @@
-.accessories-wish {
-    margin: 0px ;
-    height: 40vh;
-}
-
-.accessories-wishlist {
+.accessories-page {
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
     display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 95%;
-}
-
-.accessories-wishlist-card {
-    cursor: pointer;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px 5px #18625b42;
-    text-align: center;
-}
-
-.accessories-wishlist-card:hover{
-    
-}
-
-.accessories-wishlist-product {
-    border-radius: 10px;
-    width: 270px;
-    height: 270px;
-    object-fit: cover;
-}
-  
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+} 
